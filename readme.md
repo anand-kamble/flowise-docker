@@ -1,3 +1,51 @@
+# Flowise Server - Docker
+
+1. To start the Flowise server through docker:
+```bash
+docker compose up
+```
+
+This will start the server along with Ngrok and you can visit the dashboard at  
+[https://pheasant-up-overly.ngrok-free.app/](https://pheasant-up-overly.ngrok-free.app/)  
+This url will be independent of the machine where the docker containers are running.
+
+
+2. If planning to use ollama, you will need ollama server running on the same machine where you started the above docker containers.  
+Also, you will need to pull the LLM model which you wish to use.
+You can use these commands in a new terminal for that:
+
+```bash
+ollama pull <model-name>
+ollama serve
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```bash
 amk23j@class113 ~/docker_flowise $ docker compose build
 WARN[0000] /home/amk23j/docker_flowise/docker-compose.yaml: `version` is obsolete 
